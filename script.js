@@ -30,3 +30,10 @@ if (studentName === null || studentName.trim() === "") {
 } else {
     studentName = studentName.trim();
 }
+
+let failedCount = 0;
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i] < 50) {
+        failedCount++;
+    }
+}
