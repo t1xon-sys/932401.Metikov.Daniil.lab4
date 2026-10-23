@@ -15,3 +15,11 @@ function filterHighScores(arr){
         return score >= 80;
     });
 }
+
+function calculateSum(arr) {
+    let sum = 0;
+    for (const score of arr) {
+        sum += score;
+    }
+    return sum;
+}
