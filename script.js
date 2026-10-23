@@ -9,3 +9,9 @@ function findMax(arr) {
     }
     return max;
 }
+
+function filterHighScores(arr){
+    return arr.filter(function (score) {
+        return score >= 80;
+    });
+}
