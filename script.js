@@ -42,3 +42,8 @@ const highScores = filterHighScores(scores);
 const maxScore = findMax(scores);
 const sum = calculateSum(scores);
 const average = sum / scores.length;
+
+alert(
+    "Привет, " + studentName + "!\n" +
+    "У вас " + highScores.length + " отличных работ, максимальный балл – " + maxScore
+);
