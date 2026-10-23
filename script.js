@@ -37,3 +37,8 @@ for (let i = 0; i < scores.length; i++) {
         failedCount++;
     }
 }
+
+const highScores = filterHighScores(scores);
+const maxScore = findMax(scores);
+const sum = calculateSum(scores);
+const average = sum / scores.length;
