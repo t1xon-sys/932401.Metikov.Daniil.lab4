@@ -45,7 +45,7 @@ const average = sum / scores.length;
 
 alert(
     "Привет, " + studentName + "!\n" +
-    "У вас " + highScores.length + " отличных работ, максимальный балл – " + maxScore
+    "У вас " + highScores.length + " отличных работ, максимальный балл - " + maxScore
 );
 
 console.log("Баллы за лабораторные:", scores);
@@ -53,3 +53,9 @@ console.log("Отличные работы (>= 80):", highScores);
 console.log("Сумма баллов:", sum);
 console.log("Средний балл:", average.toFixed(2));
 console.log("Количество неудовлетворительных работ (< 50):", failedCount);
+
+if (average >= 85) {
+    console.log("Отличная работа, " + studentName + "! Так держать, не останавливайся на достигнутом, всегда стремись к большему: мечтай, исследуй, учись и действуй!");
+} else {
+    console.log("Средний балл ниже 85. Не бойся ошибаться, учёба начинается с ошибок. Продолжай стараться, " + studentName + "!", "Каждый шаг к знаниям приближает тебя к успеху.");
+}
