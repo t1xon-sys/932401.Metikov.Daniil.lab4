@@ -47,3 +47,9 @@ alert(
     "Привет, " + studentName + "!\n" +
     "У вас " + highScores.length + " отличных работ, максимальный балл – " + maxScore
 );
+
+console.log("Баллы за лабораторные:", scores);
+console.log("Отличные работы (>= 80):", highScores);
+console.log("Сумма баллов:", sum);
+console.log("Средний балл:", average.toFixed(2));
+console.log("Количество неудовлетворительных работ (< 50):", failedCount);
