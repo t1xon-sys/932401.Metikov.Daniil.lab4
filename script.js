@@ -23,3 +23,10 @@ function calculateSum(arr) {
     }
     return sum;
 }
+
+let studentName = prompt("Введите ваше имя:", "");
+if (studentName === null || studentName.trim() === "") {
+    studentName = "Студент";
+} else {
+    studentName = studentName.trim();
+}
