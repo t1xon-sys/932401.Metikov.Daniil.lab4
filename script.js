@@ -47,6 +47,8 @@ const highScores = filterHighScores(scores);
 const maxScore = findMax(scores);
 const sum = calculateSum(scores);
 const average = sum / scores.length;
+const failedCount = countFailed(scores);
+
 
 alert(
     "Привет, " + studentName + "!\n" +
