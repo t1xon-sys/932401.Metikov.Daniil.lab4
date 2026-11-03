@@ -24,6 +24,16 @@ function calculateSum(arr) {
     return sum;
 }
 
+function countFailed(arr) {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 50) {
+            count++;
+        }
+    }
+    return count;
+}
+
 let studentName = prompt("Введите ваше имя:", "");
 if (studentName === null || studentName.trim() === "") {
     studentName = "Студент";
